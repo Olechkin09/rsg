@@ -114,7 +114,7 @@ def rec_system (cl):
     df.columns = ['Список рекомендаций']
     df.index = range(1,16)
     df = df.to_csv().encode('utf-8')
-    st.download_button( label="Скачать список", data=df, file_name= 'rec_list_'+ cl +'.csv', mime='text/csv')
+    st.download_button( label="Скачать список", data=df, file_name= 'rec_list.csv', mime='text/csv')
     st.write('Список будет скачан в csv формате, открывайте его через приложение "Блокнот"')   
 
 
